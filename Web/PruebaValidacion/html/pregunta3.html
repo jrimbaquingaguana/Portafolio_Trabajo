@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Texto</title>
+    <link href="../css/menu.css" rel="stylesheet" type="text/css">
+    <script src="../js/prueba.js" defer></script>
+
+
+    
+</head>
+<body background="../img/img1.jpg">
+
+     <!-- start nav -->
+     <nav id="menu">
+        <!-- start menu -->
+        <ul>
+            <li><a href="../index.html">Pregunta1</a>
+             <li><a href="#">Menu</a>
+            <!-- start menu desplegable -->
+            <ul>
+                <li><a href="index.html">Pregunta 2</a></li>
+                <li><a href="#">Pregunta 3</a></li>
+            </ul>
+            <!-- end menu desplegable -->
+            </li>
+        <!-- end menu -->
+        </ul>
+    </nav>
+    <!-- end nav -->
+    <br>
+    <br>
+    <div class="container">
+        <h1>Analisis de Texto</h1>
+        <form onsubmit="return analizarTexto();">
+            <label for="texto">Ingresa un texto:</label>
+            <textarea id="texto" name="texto" rows="4" required></textarea>
+            <button type="submit">Analizar</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+
+    
+</body>
+</html>

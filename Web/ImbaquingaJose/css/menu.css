@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+#menu ul {
+ list-style:none;
+ margin:0;
+ padding:0;
+}
+
+/* items del menu */
+
+#menu ul li {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* enlaces del menu */
+
+#menu ul a {
+ display:block;
+
+ text-decoration:none;
+	color: black;
+ font-weight:400;
+ font-size:15px;
+ padding:10px;
+ font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ text-transform:uppercase;
+ letter-spacing:1px;
+}
+
+/* items del menu */
+
+#menu ul li {
+ position:relative;
+ float:left;
+ margin:0;
+ padding:0;
+}
+
+/* efecto al pasar el ratón por los items del menu */
+
+#menu ul li:hover {
+}
+
+#menu ul ul {
+ display:none;
+ position:absolute;
+ top:100%;
+ left:0;
+ 
+ padding:0;
+}
+
+/* items del menu desplegable */
+
+#menu ul ul li {
+ float:none;
+ width:150px
+}
+
+/* enlaces de los items del menu desplegable */
+
+#menu ul ul a {
+ line-height:120%;
+ padding:10px 15px;
+}
+
+/* items del menu desplegable al pasar el ratón */
+
+#menu ul li:hover > ul {
+ display:block;
+}
+iframe{
+width: 100%;	
+height: auto;
+}
+section{
+	position:relative;
+	top:20px;
+}
+.contenido{
+	position:absolute; top:0px; width:500px; height:200px; background-color:black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+
+}
+
+
+.div1 {
+    font-size: 20px;
+    display: flex;
+
+    align-items: center;
+}
+
+.div1 span {
+    margin-right: 20px;
+}
+
+
+

@@ -1,0 +1,26 @@
+S<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de inicio de sesión</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo_login.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="div1">
+            <h2>DatosUsuario</h2>
+        </div>
+        <div class="div2">
+            
+            <form method="post" action="php/login.php">
+                <label for="username">Usuario:</label>
+                <input type="text" name="username" id="username" required><br>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password" required><br>
+
+                <input type="submit" value="Iniciar sesión">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

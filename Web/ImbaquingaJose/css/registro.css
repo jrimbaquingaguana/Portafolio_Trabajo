@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    font-family: Arial, sans-serif;
+    	background-color:#007bff;
+
+    margin: 0;
+	
+}
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+}
+
+.div1 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.div2 {
+    display: flex;
+    flex-direction: column; /* Alineamos los elementos en columnas */
+}
+
+/* Estilos para los campos */
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+input[type="number"] {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box; /* Ajustamos el tamaño incluyendo el padding en el ancho total */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #183DD6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .div2 {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link href="../css/2pregunta.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <form>
+    <div class="input-container">
+      <label for="cedula">Cédula:</label>
+      <input type="text" id="cedula" name="cedula" placeholder="Ingresa la cédula">
+    </div>
+    <div class="input-container">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingresa el nombre">
+    </div>
+    <div class="input-container">
+      <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+      <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+    </div>
+    <div class="input-container">
+      <label for="sueldo">Sueldo:</label>
+      <input type="number" id="sueldo" name="sueldo" step="any">
+    </div>
+    <div class="input-container">
+      <label for="cargasFamiliares">Cargas Familiares:</label>
+      <input type="number" id="cargasFamiliares" name="cargasFamiliares" min="0">
+    </div>
+
+    <button type="button" onclick="calcularEdadesYBonificaciones()">Mostrar Empleados</button>
+    <button type="button" onclick="buscarEmpleado()">Buscar Empleado por Cédula</button>
+  </form>
+
+  <div id="resultados">
+    <h2>Resultados:</h2>
+    <div id="empleados"></div>
+    <p id="montoTotalSueldos"></p>
+    <p id="montoTotalBonificaciones"></p>
+    <p id="datosEmpleado"></p>
+  </div>
+
+  <script src="../php//tablas.js"></script>
+</body>
+</html>

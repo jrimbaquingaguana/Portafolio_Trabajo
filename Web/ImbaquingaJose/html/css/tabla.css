@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input, button {
+  margin-bottom: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#resultado {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}

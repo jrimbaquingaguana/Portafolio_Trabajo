@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Numeros Impares</title>
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <script src="js/prueba.js" defer></script>
+</head>
+<body background="img/img1.jpg">
+
+    <!-- start nav -->
+    <nav id="menu">
+        <!-- start menu -->
+        <ul>
+            <li><a href="#">Index</a>
+            <li><a href="#">Menu</a>
+            <!-- start menu desplegable -->
+            <ul>
+                <li><a href="html/index.html">Pregunta 2</a></li>
+                <li><a href="html/pregunta3.html">Pregunta 3</a></li>
+            </ul>
+            <!-- end menu desplegable -->
+            </li>
+        <!-- end menu -->
+        </ul>
+    </nav>
+    <!-- end nav -->
+    <br>
+    <br>
+    <h1>Formulario de Numeros Impares</h1>
+    <form onsubmit="return validar();">
+        <label for="numero">Ingresa un numero impar, entero o decimal y positivo:</label>
+        <input type="text" id="numero" name="numero" required>
+        <button type="button" onclick="separar();">Separar numero</button>
+        <input type="submit" value="Enviar">
+        <div id="resultado"></div>
+    </form>
+</body>
+</html>
+

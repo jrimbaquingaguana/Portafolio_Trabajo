@@ -1,0 +1,40 @@
+# Project: Project1
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = tetris.o NodoDoble.o Posicion.o ListaDoble.o TetrisFuncion.o
+LINKOBJ  = tetris.o NodoDoble.o Posicion.o ListaDoble.o TetrisFuncion.o
+LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = Project1.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\DevCpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+tetris.o: tetris.cpp
+	$(CPP) -c tetris.cpp -o tetris.o $(CXXFLAGS)
+
+NodoDoble.o: NodoDoble.cpp
+	$(CPP) -c NodoDoble.cpp -o NodoDoble.o $(CXXFLAGS)
+
+Posicion.o: Posicion.cpp
+	$(CPP) -c Posicion.cpp -o Posicion.o $(CXXFLAGS)
+
+ListaDoble.o: ListaDoble.cpp
+	$(CPP) -c ListaDoble.cpp -o ListaDoble.o $(CXXFLAGS)
+
+TetrisFuncion.o: TetrisFuncion.cpp
+	$(CPP) -c TetrisFuncion.cpp -o TetrisFuncion.o $(CXXFLAGS)

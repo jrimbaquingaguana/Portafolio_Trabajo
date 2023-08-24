@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario Numero al Reves y Suma de Digitos</title>
+    <link href="../css/menu.css" rel="stylesheet" type="text/css">
+    <script src="../js/prueba.js" defer></script>
+
+</head>
+<body background="../img/img1.jpg">
+    <!-- start nav -->
+    <nav id="menu">
+        <!-- start menu -->
+        <ul>
+            <li><a href="../index.html">Pregunta1</a>
+             <li><a href="#">Menu</a>
+            <!-- start menu desplegable -->
+            <ul>
+                <li><a href="#">Pregunta 2</a></li>
+                <li><a href="pregunta3.html">Pregunta 3</a></li>
+            </ul>
+            <!-- end menu desplegable -->
+            </li>
+        <!-- end menu -->
+        </ul>
+    </nav>
+    <!-- end nav -->
+    <br>
+    <br>
+    <h1>Formulario Numero al Reves y Suma de Digitos</h1>
+    <form onsubmit="return sumaEntreNumeros();">
+        <label for="numero">Ingresa un numero entero o decimal y positivo:</label>
+        <input type="number" step="any" id="numero" name="numero" required>
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <div id="resultado"></div>
+
+</body>
+</html>

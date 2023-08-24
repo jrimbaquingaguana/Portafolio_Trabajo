@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1674101299 source:c:\users\nayro\documents\final\main.cpp
+	<cstdlib>
+	<iostream>
+	<iostream>
+	<conio.h>
+	"Hash.cpp"
+	<bits/stdc++.h>
+
+1674101499 c:\users\nayro\documents\final\hash.cpp
+	<bits/stdc++.h>
+	"Hash.h"
+
+1674101167 c:\users\nayro\documents\final\hash.h
+	<bits/stdc++.h>
+
